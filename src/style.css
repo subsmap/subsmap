@@ -42,13 +42,16 @@ a {
 
 .settingPannel {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     right: 1px;
     font-size: 12px;
     border-radius: 7px;
     background: rgba(100, 100, 100, 0.75);
     color: #FFFFFF;
     transition: width 2s, height 2s;
+    z-index: 1050;
+    padding: 5px;
+    margin: 10px;
 }
 
 .slider {
