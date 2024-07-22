@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+html[lang="fa"] {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.ltr {
+    direction: ltr;
+    text-align: left;
+}
+
+.absolute {
+    position: absolute;
+    z-index: 2;
+    color: #FFFFFF;
+    background: rgba(80, 80, 80, 0.75);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1px;
+    padding: 1px;
+    width: 95%;
+}
+
+.settingPannel {
+    position: absolute;
+    bottom: 30px;
+    right: 1px;
+    font-size: 12px;
+    border-radius: 7px;
+    background: rgba(100, 100, 100, 0.75);
+    color: #FFFFFF;
+    transition: width 2s, height 2s;
+}
+
+.slider {
+    width: 70px;
+    height: 100%;
+}
+
+.color-bar-container {
+    display: flex;
+    align-items: center;
+}
+
+.color-bar-image {
+    width: 100px;
+    border: none;
+}
+
+.color-label {
+    font-weight: bold;
+    color: #000;
+}
+
+.color-bar-label {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.arrow-controls {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    float: left;
+}
+
+.arrow-controls a {
+    text-decoration: none;
+}
+
+.color-bar-button {
+    display: inline-block;
+    margin: 2px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.color-bar-button:hover {
+    transform: scale(1.5);
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(250, 250, 250, 0.90);
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    color: #FFFFFF;
+    width: 90%;
+    height: 90%;
+}
+
+.info-frame, .about-page {
+    width: 99%;
+    height: 90%;
+    border: none;
+}
+
+.about-page {
+    color: #000;
+}
+
+.about-page a {
+    color: inherit;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 0;
+}
+
+.info-panel {
+    color: #000;
+}
