@@ -1,0 +1,17 @@
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+.leaflet-pane {
+    z-index: 0;
+}
+
+.leaflet-control-container {
+    z-index: 1000;
+}
