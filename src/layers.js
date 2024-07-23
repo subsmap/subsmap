@@ -47,7 +47,7 @@ function setupBaseLayers(accessToken) {
 }
 
 function setupInclusiveOverlayLayers(){
-    const wmsSubsidence = L.tileLayer.wms('https://www.geo.mapsdev.com/geoserver/subsidence/wms', {
+    const wmsSubsidence = L.tileLayer.wms('https://gs.mapsdev.com/geoserver/subsidence/wms', {
         VERSION: '1.1.0',
         LAYERS: 'subsidence:subsidence_rate_2014-2020_desc_mmpr_v1.0.0',
         STYLES: 'cm_spectral',
@@ -63,7 +63,7 @@ function setupInclusiveOverlayLayers(){
 }
 
 function setupExclusiveOverlayLayers() {
-    const wmsSeasonal = L.tileLayer.wms('https://www.geo.mapsdev.com/geoserver/subsidence/wms', {
+    const wmsSeasonal = L.tileLayer.wms('https://gs.mapsdev.com/geoserver/subsidence/wms', {
         VERSION: '1.1.0',
         LAYERS: 'subsidence:seasonal_amplitude_2014-2020_desc_mm_v1.0.0',
         STYLES: 'cm_viridis',
@@ -75,10 +75,10 @@ function setupExclusiveOverlayLayers() {
         maxZoom: maxZoom,
         attribution: "Contains modified Copernicus Sentinel data 2022, processed by ESA."
     });
-    const wmsCountiesSubsidenceArea = L.tileLayer.wms('https://www.geo.mapsdev.com/geoserver/subsidence/wms', {
+    const wmsCountiesSubsidenceArea = L.tileLayer.wms('https://gs.mapsdev.com/geoserver/subsidence/wms', {
         VERSION: '1.1.0',
         LAYERS: 'subsidence:counties_2014-2020_v1.0.0',
-        STYLES: 'subsidence:counties_subsidence_area_percent_white+reds',
+        STYLES: 'subsidence:subsidence_area_percent_white_to_red',
         format: 'image/png',
         transparent: true,
         tms: true,
@@ -86,10 +86,10 @@ function setupExclusiveOverlayLayers() {
         maxZoom: maxZoom,
         attribution: "Contains modified Copernicus Sentinel data 2022, processed by ESA."
     });
-    const wmsProvincesSubsidenceArea = L.tileLayer.wms('https://www.geo.mapsdev.com/geoserver/subsidence/wms', {
+    const wmsProvincesSubsidenceArea = L.tileLayer.wms('https://gs.mapsdev.com/geoserver/subsidence/wms', {
         VERSION: '1.1.0',
         LAYERS: 'subsidence:provinces_2014-2020_v1.0.0',
-        STYLES: 'subsidence:counties_subsidence_area_percent_white+reds',
+        STYLES: 'subsidence:subsidence_area_percent_white_to_red',
         format: 'image/png',
         transparent: true,
         tms: true,
@@ -97,7 +97,7 @@ function setupExclusiveOverlayLayers() {
         maxZoom: maxZoom,
         attribution: "Contains modified Copernicus Sentinel data 2022, processed by ESA."
     });
-    const wmsMajorBasinSubsidenceArea = L.tileLayer.wms('https://www.geo.mapsdev.com/geoserver/subsidence/wms', {
+    const wmsMajorBasinSubsidenceArea = L.tileLayer.wms('https://gs.mapsdev.com/geoserver/subsidence/wms', {
         VERSION: '1.1.0',
         LAYERS: 'subsidence:major_catchments_2014-2020_v1.0.0',
         STYLES: 'subsidence:counties_subsidence_area_percent_white+reds',
