@@ -40,6 +40,7 @@ overlayInclusiveLayers['Subsidence'].addTo(map);
 document.addEventListener('DOMContentLoaded', setupMapClick);
 document.addEventListener('DOMContentLoaded', setupColorBarControls);
 document.addEventListener('DOMContentLoaded', setupPopup);
+disableRightClick();
 
 function initializeControlPanel() {
     // initialize control panel
@@ -458,4 +459,13 @@ function updateAboutFrame(lang) {
 
 function getTranslation(language, key) {
     return translations[language][key] || key;
+}
+
+
+// right click
+function disableRightClick(){
+    // disable right click
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+    });
 }
