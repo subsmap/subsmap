@@ -414,6 +414,12 @@ function setupPopup() {
         }
     }
 
+    // Show the popup when the page loads
+    window.addEventListener('load', function () {
+        togglePopup('block');
+        document.addEventListener('click', handleDocumentClick);
+    });
+
     openPopupLink.addEventListener('click', function (e) {
         e.stopPropagation();
         togglePopup('block');

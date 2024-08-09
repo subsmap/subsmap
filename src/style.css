@@ -114,8 +114,8 @@ a {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     z-index: 1100;
     color: #FFFFFF;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
 }
 
 .info-frame, .about-page {
